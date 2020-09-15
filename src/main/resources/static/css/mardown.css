@@ -83,6 +83,10 @@ ul li {
     list-style-position: outside;
 }
 
+.layui-fixbar li{
+    list-style-type: none;
+}
+
 table{
     margin: 0 auto;
 }

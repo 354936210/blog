@@ -13,7 +13,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class ReadController {
     @RequestMapping
     public String article(Model model){
-        model.addAttribute("articleContent","### 自动配置\n" +
+        model.addAttribute("articleContent","**这是我要显示的文章**\n" +
+                "\n" +
+                "- asdasdas\n" +
+                "- asdasdas\n" +
+                "- asdasda\n" +
+                "\n" +
+                "### 自动配置\n" +
                 "\n" +
                 "首先看一下pom.xml\n" +
                 "\n" +
