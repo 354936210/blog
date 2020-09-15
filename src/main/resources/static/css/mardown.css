@@ -1,0 +1,105 @@
+pre, code, tt {
+    font-size: 12px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+    margin: 0 0px;
+    padding: 0px 0px;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+pre>code {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    color: #338000;
+    border: none;
+    background: transparent;
+
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+pre code, pre tt {
+    background-color: transparent;
+    border: none;
+}
+
+/*
+.language-xml {
+    font-size: 12px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+.language-xml {
+    margin: 0 0px;
+    padding: 0px 0px;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+pre>.language-xml {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    color: rgba(203, 75, 22, 0.86);
+    font-size: 16px;
+    border: none;
+    background: transparent;
+
+}
+
+
+
+.language-xml {
+    background-color: transparent;
+    border: none;
+}*/
+
+ul,
+ol {
+    margin: 0 0 1.5em 1.5em;
+}
+ol li {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+ul li {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+table{
+    margin: 0 auto;
+}
+table th {
+    font-weight: bold;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 6px 13px;
+}
+
+table tr {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
