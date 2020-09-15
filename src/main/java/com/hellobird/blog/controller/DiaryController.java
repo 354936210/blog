@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/diary")
 public class DiaryController {
-    @RequestMapping("")
+    @RequestMapping
     public String article(){
         return "diary";
     }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/link")
 public class LinkController {
-    @RequestMapping("")
+    @RequestMapping
     public String article(){
         return "link";
     }
