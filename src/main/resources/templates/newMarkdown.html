@@ -5,9 +5,8 @@
 <script th:src="@{https://cdn.jsdelivr.net/npm/marked/marked.min.js}"></script>
 <link rel="stylesheet" th:href="@{/css/mardown.css}" />
 <script th:inline="javascript">
-    var message = [[${mdText}]];
     document.getElementById('content').innerHTML =
-        marked(message);
+        marked([[${mdText}]]);
 </script>
 </body>
 </html>
