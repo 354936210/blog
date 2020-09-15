@@ -1,0 +1,13 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="newMarkdown(mdText)" id="markdownId">
+<div id="content"></div>
+<script th:src="@{https://cdn.jsdelivr.net/npm/marked/marked.min.js}"></script>
+<link rel="stylesheet" th:href="@{/css/mardown.css}" />
+<script th:inline="javascript">
+    var message = [[${mdText}]];
+    document.getElementById('content').innerHTML =
+        marked(message);
+</script>
+</body>
+</html>

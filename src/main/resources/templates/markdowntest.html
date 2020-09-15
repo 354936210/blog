@@ -1,0 +1,21 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div  th:fragment="markdown(mdText)" id="markdownId">
+<script th:src="@{https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js}"></script>
+<script th:src="@{https://cdn.jsdelivr.net/npm/marked/marked.min.js}"></script>
+<style>
+    .md_source{
+        display: none
+    }
+</style>
+<pre class="md_source" th:text="${mdText}">
+</pre>
+<div class="md_render" >
+</div>
+<script>
+    // document.getElementById("contentID").innerHTML=marked($('.md_source').html())
+    $('.md_render').html(marked($('.md_source').html()));
+    // $('.markdown-container').html(marked('# Marked in the browser\n\nRendered by **marked**.'));
+</script>
+</div>
+</html>
