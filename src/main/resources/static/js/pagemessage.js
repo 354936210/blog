@@ -23,21 +23,21 @@ layui.use(['element', 'jquery', 'form', 'layedit', 'flow'], function () {
     });
     //回复按钮点击事件
     $('#message-list').on('click', '.btn-reply', function () {
-         var targetId = $(this).data('targetid')
-             , targetName = $(this).data('targetname')
-             , $container = $(this).parent('p').parent().siblings('.replycontainer');
-         if ($(this).text() == '回复') {
-             $container.find('textarea').attr('placeholder', '回复【' + targetName + '】');
-             $container.removeClass('layui-hide');
-             $container.find('input[name="targetUserId"]').val(targetId);
-             $(this).parents('.message-list li').find('.btn-reply').text('回复');
-             $(this).text('收起');
-         } else {
-             $container.addClass('layui-hide');
-             $container.find('input[name="targetUserId"]').val(0);
-             $(this).text('回复');
-         }
-     });
- 
+        var targetId = $(this).data('targetid')
+            , targetName = $(this).data('targetname')
+            , $container = $(this).parent('p').parent().siblings('.replycontainer');
+        if ($(this).text() == '回复') {
+            $container.find('textarea').attr('placeholder', '回复【' + targetName + '】');
+            $container.removeClass('layui-hide');
+            $container.find('input[name="targetUserId"]').val(targetId);
+            $(this).parents('.message-list li').find('.btn-reply').text('回复');
+            $(this).text('收起');
+        } else {
+            $container.addClass('layui-hide');
+            $container.find('input[name="targetUserId"]').val(0);
+            $(this).text('回复');
+        }
+    });
+
 });
  
