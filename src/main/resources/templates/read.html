@@ -116,12 +116,12 @@
                                                 <strong><span class="comment-count" style="color: #2C662D">0</span>&nbsp;评论</strong>
                                             </h5></li>
                                             <li class=" text-right" style="float: right;">
-                <span class="icon2">
-                    <input type="radio" name="commentorder" id="commentnew" checked="checked" value="DESC">
-                    <label for="commentnew">最新</label>
-                    <input type="radio" name="commentorder" id="commentlatest" value="ASC">
-                    <label for="commentlatest">最早</label>
-                </span>
+                                                <span class="icon2">
+                                                    <input type="radio" name="commentorder" id="commentnew" checked="checked" value="DESC">
+                                                    <label for="commentnew">最新</label>
+                                                    <input type="radio" name="commentorder" id="commentlatest" value="ASC">
+                                                    <label for="commentlatest">最早</label>
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>
@@ -129,11 +129,135 @@
                                         <div class="comment-load" style="display: none;"><img src="http://www.lzqcode.com/plus/dedemao-comment/img/loader.gif" alt=""></div>
                                         <div class="row b-user b-parent comm_list">
                                             <ul class="list" id="ulcommentlist">
-                                                <div class="empty-prompt-w">
-                                                    <span class="prompt-null-w">还没有评论，快来抢沙发吧！</span>
-                                                    <li><small><img src="http://qzapp.qlogo.cn/qzapp/101871412/7520A717E83D6A2A1E8F72018604E5A0/100"><a href="#">HelloBird</a> 评论 <a href="http://www.lzqcode.com/plus/view.php?aid=6">Java学习路线推荐</a></small>：img src=http://www.lzqcode.com/plus/dedemao-comment/face/qiang.gif title=强</li><li><small><img src="http://qzapp.qlogo.cn/qzapp/101871412/EEA8C5E49322D8C34DE50EF40605928E/100"><a href="#">HelloBird</a> 评论 <a href="http://www.lzqcode.com/plus/view.php?aid=6">Java学习路线推荐</a></small>：img src=http://www.lzqcode.com/plus/dedemao-comment/face/ku.gif title=酷</li><li><small><img src="http://qzapp.qlogo.cn/qzapp/101871412/D4AEA4C74C914749B37151B75D04C30C/100"><a href="#">禁止香菜</a> 评论 <a href="http://www.lzqcode.com/plus/view.php?aid=6">Java学习路线推荐</a></small>：Hi~nbsp;o(*￣▽￣*)ブ</li><li><small><img src="http://qzapp.qlogo.cn/qzapp/101871412/D4AEA4C74C914749B37151B75D04C30C/100"><a href="#">禁止香菜</a> 评论 <a href="http://www.lzqcode.com/plus/view.php?aid=6">Java学习路线推荐</a></small>：img src=http://www.lzqcode.com/plus/dedemao-comment/face/hx.gif title=害羞</li><li><small><img src="http://qzapp.qlogo.cn/qzapp/101871412/4387E3432C622D3FF3C4DAB48E14A8C1/100"><a href="#">Zain</a> 评论 <a href="/plus/view.php?aid=6">Java学习路线推荐</a></small>：img src=http://www.lzqcode.com/plus/dedemao-comment/face/fd.gif title=发呆</li><li><small><img src="http://www.lzqcode.com/uploads/userup/57/myface.png"><a href="#">小刘</a> 评论 <a href="http://www.lzqcode.com/plus/view.php?aid=6">Java学习路线推荐</a></small>： 好玩吧</li>
-                                                </div>
-
+                                                <li class="entry zoomIn">
+                                                    <div class="adiv">
+                                                        <div><img class="headerimage"
+                                                                  th:src="@{http://qzapp.qlogo.cn/qzapp/101871412/7520A717E83D6A2A1E8F72018604E5A0/100}">
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="info rmp"><strong class="p_floor">4楼</strong>
+                                                            <div class="nmp"><span class="nick">HelloBird</span> <span
+                                                                    class="posandtime">网友&nbsp;2020-09-11 11:01:48</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comm"><p><img
+                                                                src="/plus/dedemao-comment/face/qiang.gif" title="强">
+                                                        </p></div>
+                                                        <div class="zhiChi"><span class="comm_reply"><a
+                                                                class="s commentVote" data-type="goodfb" data-id="559"
+                                                                href="javascript:;">支持(<span
+                                                                id="goodfb559">2</span>)</a><a href="javascript:;"
+                                                                                               aid="6" pid="559"
+                                                                                               username="HelloBird"
+                                                                                               onclick="reply(this)">回复</a></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="entry zoomIn">
+                                                    <div class="adiv">
+                                                        <div><img class="headerimage"
+                                                                  src="http://qzapp.qlogo.cn/qzapp/101871412/EEA8C5E49322D8C34DE50EF40605928E/100">
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="info rmp"><strong class="p_floor">3楼</strong>
+                                                            <div class="nmp"><span class="nick"></span> <span
+                                                                    class="posandtime">网友&nbsp;2020-09-02 11:15:50</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comm"><p><img
+                                                                src="/plus/dedemao-comment/face/ku.gif" title="酷"></p>
+                                                        </div>
+                                                        <div class="zhiChi"><span class="comm_reply"><a
+                                                                class="s commentVote" data-type="goodfb" data-id="555"
+                                                                href="javascript:;">支持(<span
+                                                                id="goodfb555">2</span>)</a><a href="javascript:;"
+                                                                                               aid="6" pid="555"
+                                                                                               username=""
+                                                                                               onclick="reply(this)">回复</a></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="entry zoomIn">
+                                                    <div class="adiv">
+                                                        <div><img class="headerimage"
+                                                                  src="http://qzapp.qlogo.cn/qzapp/101871412/D4AEA4C74C914749B37151B75D04C30C/100">
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="info rmp"><strong class="p_floor">2楼</strong>
+                                                            <div class="nmp"><span class="nick">禁止香菜</span> <span
+                                                                    class="posandtime">网友&nbsp;2020-08-28 10:54:35</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comm"><p><img
+                                                                src="/plus/dedemao-comment/face/hx.gif" title="害羞"></p>
+                                                        </div>
+                                                        <div class="zhiChi"><span class="comm_reply"><a
+                                                                class="s commentVote" data-type="goodfb" data-id="544"
+                                                                href="javascript:;">支持(<span
+                                                                id="goodfb544">2</span>)</a><a href="javascript:;"
+                                                                                               aid="6" pid="544"
+                                                                                               username="禁止香菜"
+                                                                                               onclick="reply(this)">回复</a></span>
+                                                        </div>
+                                                        <ul class="reply">
+                                                            <li class="gh">
+                                                                <div class="adiv">
+                                                                    <div><img class="headerimage"
+                                                                              src="http://qzapp.qlogo.cn/qzapp/101871412/D4AEA4C74C914749B37151B75D04C30C/100">
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="re_info rmp rmpvipblue"><strong
+                                                                            class="p_floor">1#</strong>
+                                                                        <div class="nmp"><span class="nick">禁止香菜</span>
+                                                                            <span class="posandtime">网友&nbsp;2020-08-29 17:36:06</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="re_comm"><p><i>@禁止香菜</i>：Hi~&nbsp;o(*￣▽￣*)ブ
+                                                                    </p>
+                                                                        <div class="zhiChi"><span class="comm_reply"><a
+                                                                                class="s commentVote" data-type="goodfb"
+                                                                                data-id="545"
+                                                                                href="javascript:;">支持(<span
+                                                                                id="goodfb545">1</span>)</a><a
+                                                                                href="javascript:;" aid="6" pid="545"
+                                                                                username="禁止香菜" topid="544"
+                                                                                onclick="reply(this)">回复</a></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="entry zoomIn">
+                                                    <div class="adiv">
+                                                        <div><img class="headerimage"
+                                                                  src="http://qzapp.qlogo.cn/qzapp/101871412/4387E3432C622D3FF3C4DAB48E14A8C1/100">
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="info rmp"><strong class="p_floor">1楼</strong>
+                                                            <div class="nmp"><span class="nick">Zain</span> <span
+                                                                    class="posandtime">网友&nbsp;2020-08-20 09:42:13</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comm"><p><img
+                                                                src="/plus/dedemao-comment/face/fd.gif" title="发呆"></p>
+                                                        </div>
+                                                        <div class="zhiChi"><span class="comm_reply"><a
+                                                                class="s commentVote" data-type="goodfb" data-id="530"
+                                                                href="javascript:;">支持(<span
+                                                                id="goodfb530">1</span>)</a><a href="javascript:;"
+                                                                                               aid="6" pid="530"
+                                                                                               username="Zain"
+                                                                                               onclick="reply(this)">回复</a></span>
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="row">
@@ -154,16 +278,16 @@
                                 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
                                 <script>
                                     var jDedemao = jQuery.noConflict(true);
-                                    jDedemao(function () {
-                                        jDedemao(".comment-load").show();
-                                        get_ajax_comment('6', 0, 10);
-                                        getHeadPic();
-                                    });
-                                    jDedemao("input[name='commentorder']").change(function () {
-                                        jDedemao(".comment-load").show();
-                                        var orderWay = $(this).val();
-                                        get_ajax_comment('6', 0, 10,orderWay,'refresh');
-                                    });
+                                    // jDedemao(function () {
+                                    //     jDedemao(".comment-load").show();
+                                    //     get_ajax_comment('6', 0, 10);
+                                    //     getHeadPic();
+                                    // });
+                                    // jDedemao("input[name='commentorder']").change(function () {
+                                    //     jDedemao(".comment-load").show();
+                                    //     var orderWay = $(this).val();
+                                    //     get_ajax_comment('6', 0, 10,orderWay,'refresh');
+                                    // });
                                     var showZan = '1';
                                     var comment_tips = '说点什么吧';
                                     var show_floor = '1';

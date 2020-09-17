@@ -77,12 +77,16 @@ function insertHtmlAtCaret(str) {
 // 发布评论
 function comment(obj) {
     // var url = PLUS_URL+'/comment_ajax.php';
-    // var reply_name = jDedemao(obj).attr('username');
-    // var floor = jDedemao(obj).attr('floor');
+    var reply_name = jDedemao(obj).attr('username');
+    var floor = jDedemao(obj).attr('floor');
+    var aid = jDedemao(obj).attr('aid');
+    var pid = jDedemao(obj).attr('pid');
+    var email = jDedemao(obj).parents('.b-box-textarea').eq(0).find("input[name='email']").val();
     var content = jDedemao(obj).parents('.b-box-textarea').eq(0).find('.b-box-content').html();
-
+    //     // 显示loading
+    //     jDedemao(".comment-load").show();
     console.log(content);
-
+    console.log(sessionStorage.length)
     axios.get('/user?ID=12345')
         .then(function (response) {
             console.log(response);
