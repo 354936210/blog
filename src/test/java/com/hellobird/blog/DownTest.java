@@ -10,7 +10,7 @@ import java.net.URL;
  * @author HelloBird
  */
 public class DownTest {
-//    http://www.lzqcode.com/plus/dedemao-comment/face/wx.gif
+    //    http://www.lzqcode.com/plus/dedemao-comment/face/wx.gif
     public static void main(String[] args) {
 //        String url = "http://www.lzqcode.com/plus/dedemao-comment/face/";
 //        String[] alt = {"wx", "pz", "se", "fd", "ku", "ll", "hx", "bz", "dk", "gg", "fl", "tp", "cy", "jingkong", "ng", "lh", "zk", "tu", "tx", "ka", "by", "am", "je", "kun", "jk", "lh", "hanxiao", "db", "fd", "zm", "yw", "xu", "yun", "zm", "shuai",  "qd", "zj", "ch", "kb", "gz", "qdl", "hx", "zhh", "yhh", "hq", "bs", "wq", "kkl", "yx", "qq", "xia", "yb", "qiang", "ruo", "ws", "sl", "bq", "jl", "ybjc", "nj", "lbx", "qfwbs", "hlszj", "klbx", "bz2", "tx2", "lh2", "ka2", "gg2", "fd2", "luanqin", "mb", "xieshi", "cywx", "wxkbk", "huaixiao2"};
